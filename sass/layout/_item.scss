@@ -1,0 +1,63 @@
+.item{
+    
+    &--iphone{
+        padding-top: 3.5rem;
+        padding-left: 7rem;
+        padding-right: 3rem;
+        grid-row: 1/3;
+        grid-column: 1/3;
+        
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,max-content);
+        
+    }
+    
+    &--evaporator{
+        
+        padding-top: 3.5rem;
+
+        grid-row: 1/3;
+        grid-column: 3/-1;
+        display:grid;
+        justify-items: center;
+        align-items: center;
+        background-color: #f7f8f9;
+    }
+    
+    &--keyboard{
+        grid-row: 3/5;
+        grid-column: 1/2;
+    }
+    &--mac{
+        grid-row: 3/5;
+        grid-column: 2/4;
+    }
+    &--icloud{
+        grid-row: 3/6;
+        grid-column: 4/-1;
+    }
+    
+    &--controller{
+        grid-row: 5/7;
+        grid-column: 1/2;
+    }
+    
+    
+    
+    
+    &__image-box{
+        
+        &--iphone{
+            width: 24.9rem;
+            grid-column: 2/3;
+            grid-row: 1/-1;
+
+        }
+    }
+    &__image{
+        display: block;
+        width: 100%;
+    }
+}

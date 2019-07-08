@@ -1,0 +1,30 @@
+.item{
+    &__name{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $font-grey; 
+        text-transform: uppercase;
+    }
+    &__sub-heading{
+        font-family: 'Arvo', serif;
+        font-weight: 400;
+        width:70%;
+        line-height: 1.5;
+        
+    }
+    &__details{
+        font-size: 1.4rem;
+        color: $font-grey; 
+        width:50%;
+    }
+    
+    &__link{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+}
