@@ -3,20 +3,39 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
         font-weight: 700;
-        color: $font-grey; 
         text-transform: uppercase;
+        
+        &--iphone{
+            align-self: end;
+            
+        }
     }
     &__sub-heading{
         font-family: 'Arvo', serif;
         font-weight: 400;
-        width:70%;
-        line-height: 1.5;
+       
+        &--iphone{
+            width:70%;
+            line-height: 1.5;
+        }
         
+        &--evaporator{
+            width: 70%;
+        }
+        
+        &--keyboard{
+            font-weight: bold;
+            text-transform: capitalize;
+
+        }
     }
     &__details{
         font-size: 1.4rem;
-        color: $font-grey; 
-        width:50%;
+        font-family: 'Open Sans', sans-serif;
+        &--iphone{
+            width:70%;
+            align-self: start;
+        }
     }
     
     &__link{
@@ -26,5 +45,18 @@
         text-decoration: none;
         font-family: sans-serif;
         font-weight: 700;
+        
+        
+        &--evaporator{
+            letter-spacing:normal;
+            text-transform: none;
+            font-weight: 400;
+            text-decoration: underline;
+            align-self: start;
+        }
+        
+        &--keyboard{
+            margin-top: 3rem;
+        }
     }
 }

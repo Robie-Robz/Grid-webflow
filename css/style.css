@@ -10,19 +10,28 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #9fa3a7;
   text-transform: uppercase; }
+  .item__name--iphone {
+    align-self: end; }
 
 .item__sub-heading {
   font-family: 'Arvo', serif;
-  font-weight: 400;
-  width: 70%;
-  line-height: 1.5; }
+  font-weight: 400; }
+  .item__sub-heading--iphone {
+    width: 70%;
+    line-height: 1.5; }
+  .item__sub-heading--evaporator {
+    width: 70%; }
+  .item__sub-heading--keyboard {
+    font-weight: bold;
+    text-transform: capitalize; }
 
 .item__details {
   font-size: 1.4rem;
-  color: #9fa3a7;
-  width: 50%; }
+  font-family: 'Open Sans', sans-serif; }
+  .item__details--iphone {
+    width: 70%;
+    align-self: start; }
 
 .item__link {
   font-size: 1.4rem;
@@ -31,6 +40,14 @@ html {
   text-decoration: none;
   font-family: sans-serif;
   font-weight: 700; }
+  .item__link--evaporator {
+    letter-spacing: normal;
+    text-transform: none;
+    font-weight: 400;
+    text-decoration: underline;
+    align-self: start; }
+  .item__link--keyboard {
+    margin-top: 3rem; }
 
 .u-heading-small {
   font-size: 2.2rem; }
@@ -56,6 +73,12 @@ html {
 .u-color-white {
   color: #fffbfb; }
 
+.u-color-cyan {
+  color: #27b9c2; }
+
+.u-color-yellow {
+  color: #ffc80a; }
+
 .container {
   display: grid;
   grid-template-rows: repeat(7, min-content);
@@ -73,7 +96,7 @@ html {
   grid-template-rows: repeat(3, max-content); }
 
 .item--evaporator {
-  padding-top: 3.5rem;
+  padding: 3.5rem 0;
   grid-row: 1/3;
   grid-column: 3/-1;
   display: grid;
@@ -83,7 +106,11 @@ html {
 
 .item--keyboard {
   grid-row: 3/5;
-  grid-column: 1/2; }
+  grid-column: 1/2;
+  padding: 3.5rem;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  background-color: #f05638; }
 
 .item--mac {
   grid-row: 3/5;
@@ -101,6 +128,9 @@ html {
   width: 24.9rem;
   grid-column: 2/3;
   grid-row: 1/-1; }
+
+.item__image-box--keyboard {
+  grid-row: 1/2; }
 
 .item__image {
   display: block;
