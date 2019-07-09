@@ -29,7 +29,7 @@
     &--keyboard{
         grid-row: 3/5;
         grid-column: 1/2;
-        padding: 3.5rem;
+        padding: 3rem; 
         
         
         display: grid;
@@ -40,6 +40,13 @@
     &--mac{
         grid-row: 3/5;
         grid-column: 2/4;
+        padding: 5rem 5rem 0;
+        
+        
+        display: grid;
+        grid-template-columns: minmax(10rem,25rem) 1fr;
+        grid-template-rows: repeat(3,min-content);
+    
     }
     &--icloud{
         grid-row: 3/6;
@@ -66,9 +73,24 @@
         &--keyboard{
             grid-row: 1/2;
         }
+        
+        
+        &--mac{
+            grid-row: 3/4;
+            width: 40rem;
+            
+            margin-top: 3rem;
+            position: relative;
+            left:-80%;
+            bottom: 0;
+           
+        }
     }
     &__image{
         display: block;
         width: 100%;
+        &--mac{
+         
+        }
     }
 }
