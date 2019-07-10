@@ -34,7 +34,7 @@
         
         display: grid;
         grid-template-rows: repeat(3,min-content);
-        
+        justify-items:center;
         background-color: #f05638;
     }
     &--mac{
@@ -57,7 +57,6 @@
         background-color: #8f76bc;
         overflow: hidden;
         justify-items: center;
-        padding-bottom: 7rem;
     }
     
     &--controller{
@@ -86,6 +85,7 @@
         
         &--keyboard{
             grid-row: 1/2;
+            width: 24rem;
         }
         
         
@@ -95,8 +95,7 @@
         
             position: relative;
             left:-60%;
-            display: grid;
-            align-content: end;
+            align-self: end;
            
         }
         
@@ -110,7 +109,7 @@
             justify-items: center;
             align-items: center;
             transform: scale(1.7);
-            margin-top: 25%;
+            margin-top: 10rem;
         }
         
         &--controller{

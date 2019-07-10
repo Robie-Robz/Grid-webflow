@@ -19,8 +19,7 @@ html {
     grid-column: 1/2;
     align-self: start; }
   .item__name--icloud {
-    z-index: 2;
-    margin-top: 10%; }
+    z-index: 2; }
 
 .item__sub-heading {
   font-family: 'Arvo', serif;
@@ -32,14 +31,14 @@ html {
     width: 70%; }
   .item__sub-heading--keyboard {
     font-weight: 700;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    width: 70%; }
   .item__sub-heading--mac {
     grid-row: 2/3;
     width: 60%;
     margin-top: 2rem; }
   .item__sub-heading--icloud {
-    z-index: 2;
-    margin-top: 10%; }
+    z-index: 2; }
 
 .item__details {
   font-size: 1.4rem;
@@ -54,8 +53,7 @@ html {
     width: 80%; }
   .item__details--icloud {
     width: 70%;
-    z-index: 2;
-    margin-top: 10%; }
+    z-index: 2; }
 
 .item__link {
   display: block;
@@ -71,15 +69,9 @@ html {
     font-weight: 400;
     text-decoration: underline;
     align-self: start; }
-  .item__link--keyboard {
-    margin-top: 5%; }
-  .item__link--mac {
-    margin-top: 5%; }
   .item__link--icloud {
     font-size: 1.2rem;
     letter-spacing: .24rem;
-    margin-top: 1rem;
-    margin-top: 10%;
     background-color: #ffc80a;
     padding: 1.4rem;
     border-radius: 3rem; }
@@ -146,6 +138,7 @@ html {
   z-index: 2;
   display: grid;
   grid-template-rows: repeat(3, min-content);
+  justify-items: center;
   background-color: #f05638; }
 
 .item--mac {
@@ -163,8 +156,7 @@ html {
   grid-template-rows: repeat(5, min-content);
   background-color: #8f76bc;
   overflow: hidden;
-  justify-items: center;
-  padding-bottom: 7rem; }
+  justify-items: center; }
 
 .item--controller {
   grid-row: 5/7;
@@ -179,15 +171,15 @@ html {
   grid-row: 1/-1; }
 
 .item__image-box--keyboard {
-  grid-row: 1/2; }
+  grid-row: 1/2;
+  width: 24rem; }
 
 .item__image-box--mac {
   grid-row: 3/4;
   width: 40rem;
   position: relative;
   left: -60%;
-  display: grid;
-  align-content: end; }
+  align-self: end; }
 
 .item__image-box--icloud {
   grid-row: 1/2;
@@ -199,7 +191,7 @@ html {
   justify-items: center;
   align-items: center;
   transform: scale(1.7);
-  margin-top: 25%; }
+  margin-top: 10rem; }
 
 .item__image-box--controller {
   width: 24.8rem; }
