@@ -4,6 +4,7 @@
         font-size: 1.2rem;
         font-weight: 700;
         text-transform: uppercase;
+        letter-spacing: .2rem;
         
         &--iphone{
             align-self: end;
@@ -13,7 +14,12 @@
         &--mac{
             grid-row: 1/2;
             grid-column: 1/2;
-            align-self: end;
+            align-self: start;
+        }
+        
+        &--icloud{
+            z-index: 2;
+            margin-top: 10%;
         }
     }
     &__sub-heading{
@@ -40,10 +46,16 @@
             width:60%;
             margin-top: 2rem;
         }
+        
+        &--icloud{
+            z-index: 2;
+            margin-top: 10%;
+        }
     }
     &__details{
         font-size: 1.4rem;
         font-family: 'Open Sans', sans-serif;
+        line-height: 2.6rem;
         &--iphone{
             width:70%;
             align-self: start;
@@ -54,9 +66,16 @@
             grid-column: 2/3;
             width: 80%;
         }
+        
+        &--icloud{
+            width:70%;
+            z-index: 2;
+            margin-top: 10%;
+        }
     }
     
     &__link{
+        display: block;
         font-size: 1.4rem;
         text-transform: uppercase;
         letter-spacing: .1rem;
@@ -74,11 +93,21 @@
         }
         
         &--keyboard{
-            margin-top: 3rem;
+            margin-top: 5%;
         }
         
         &--mac{
-            
+           margin-top: 5%;
+        }
+        
+        &--icloud{
+            font-size: 1.2rem;
+            letter-spacing: .24rem;
+            margin-top: 1rem;
+            margin-top: 10%;
+            background-color: #ffc80a;
+            padding: 1.4rem;
+            border-radius: 3rem;
         }
     }
 }

@@ -30,7 +30,7 @@
         grid-row: 3/5;
         grid-column: 1/2;
         padding: 3rem; 
-        
+        z-index: 2;
         
         display: grid;
         grid-template-rows: repeat(3,min-content);
@@ -44,24 +44,38 @@
         
         
         display: grid;
-        grid-template-columns: minmax(10rem,25rem) 1fr;
-        grid-template-rows: repeat(3,min-content);
+        grid-template-columns: minmax(10rem,50%) 1fr;
+        grid-template-rows: repeat(2,min-content) 1fr;
     
     }
     &--icloud{
         grid-row: 3/6;
         grid-column: 4/-1;
+        
+        display: grid;
+        grid-template-rows: repeat(5,min-content);
+        background-color: #8f76bc;
+        overflow: hidden;
+        justify-items: center;
+        padding-bottom: 7rem;
     }
     
     &--controller{
         grid-row: 5/7;
         grid-column: 1/2;
+        
+        display: grid;
+        grid-template-rows: repeat(3,min-content);
+        justify-items:center;
     }
     
     
     
     
+    
+    
     &__image-box{
+        
         
         &--iphone{
             width: 24.9rem;
@@ -78,19 +92,42 @@
         &--mac{
             grid-row: 3/4;
             width: 40rem;
-            
-            margin-top: 3rem;
+        
             position: relative;
-            left:-80%;
-            bottom: 0;
+            left:-60%;
+            display: grid;
+            align-content: end;
            
+        }
+        
+        &--icloud{
+            grid-row: 1/2;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+            background-color: #8166b0;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            transform: scale(1.7);
+            margin-top: 25%;
+        }
+        
+        &--controller{
+            width: 24.8rem;
         }
     }
     &__image{
         display: block;
         width: 100%;
         &--mac{
-         
+         z-index: 1;
+        }
+        
+        
+        &--icloud{
+            width: 65%;
+            
         }
     }
 }
