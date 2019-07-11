@@ -19,7 +19,8 @@ html {
     grid-column: 1/2;
     align-self: start; }
   .item__name--icloud {
-    z-index: 2; }
+    z-index: 2;
+    margin-top: 3rem; }
 
 .item__sub-heading {
   font-family: 'Arvo', serif;
@@ -36,9 +37,18 @@ html {
   .item__sub-heading--mac {
     grid-row: 2/3;
     width: 60%;
-    margin-top: 2rem; }
+    margin-top: 3rem; }
   .item__sub-heading--icloud {
-    z-index: 2; }
+    z-index: 2;
+    margin-top: 3rem; }
+  .item__sub-heading--controller {
+    width: 50%;
+    margin-top: 3rem; }
+  .item__sub-heading--ipad {
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 50%;
+    margin-top: 6rem; }
 
 .item__details {
   font-size: 1.4rem;
@@ -53,7 +63,8 @@ html {
     width: 80%; }
   .item__details--icloud {
     width: 70%;
-    z-index: 2; }
+    z-index: 2;
+    margin-top: 3rem; }
 
 .item__link {
   display: block;
@@ -73,8 +84,11 @@ html {
     font-size: 1.2rem;
     letter-spacing: .24rem;
     background-color: #ffc80a;
-    padding: 1.4rem;
-    border-radius: 3rem; }
+    padding: 2rem;
+    border-radius: 3rem;
+    margin: 3rem 0; }
+  .item__link--controller {
+    margin-top: 3rem; }
 
 .u-heading-small {
   font-size: 2.2rem; }
@@ -150,10 +164,10 @@ html {
   grid-template-rows: repeat(2, min-content) 1fr; }
 
 .item--icloud {
-  grid-row: 3/6;
+  grid-row: 3/7;
   grid-column: 4/-1;
   display: grid;
-  grid-template-rows: repeat(5, min-content);
+  grid-template-rows: repeat(4, min-content) 1fr;
   background-color: #8f76bc;
   overflow: hidden;
   justify-items: center; }
@@ -163,7 +177,33 @@ html {
   grid-column: 1/2;
   display: grid;
   grid-template-rows: repeat(3, min-content);
-  justify-items: center; }
+  justify-items: center;
+  background-color: #f7f8f9;
+  padding: 3rem 1.5rem; }
+
+.item--ipad {
+  grid-row: 5/7;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  justify-items: center;
+  background-color: #93b6b7;
+  background-size: contain; }
+
+.item--twitter {
+  grid-row: 7/8;
+  grid-column: 1/2;
+  background-color: #38d5f4; }
+
+.item--exp {
+  grid-row: 7/8;
+  grid-column: 2/3;
+  background-color: #f7f8f9; }
+
+.item--tv {
+  grid-row: 7/8;
+  grid-column: 3/-1;
+  background-color: #2c2c2c; }
 
 .item__image-box--iphone {
   width: 24.9rem;
@@ -172,7 +212,7 @@ html {
 
 .item__image-box--keyboard {
   grid-row: 1/2;
-  width: 24rem; }
+  width: 30rem; }
 
 .item__image-box--mac {
   grid-row: 3/4;
@@ -194,7 +234,15 @@ html {
   margin-top: 10rem; }
 
 .item__image-box--controller {
-  width: 24.8rem; }
+  width: 24.8rem;
+  grid-row: 1/2; }
+
+.item__image-box--ipad {
+  align-self: end;
+  width: 60rem;
+  background-image: url("../img/UX.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .item__image {
   display: block;
@@ -203,3 +251,6 @@ html {
     z-index: 1; }
   .item__image--icloud {
     width: 65%; }
+  .item__image--ipad {
+    position: relative;
+    left: -10%; }

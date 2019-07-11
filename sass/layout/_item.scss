@@ -49,11 +49,11 @@
     
     }
     &--icloud{
-        grid-row: 3/6;
+        grid-row: 3/7;
         grid-column: 4/-1;
         
         display: grid;
-        grid-template-rows: repeat(5,min-content);
+        grid-template-rows: repeat(4,min-content) 1fr;
         background-color: #8f76bc;
         overflow: hidden;
         justify-items: center;
@@ -66,12 +66,40 @@
         display: grid;
         grid-template-rows: repeat(3,min-content);
         justify-items:center;
+        
+        background-color: #f7f8f9;
+        padding: 3rem 1.5rem;
     }
     
+    &--ipad{
+        grid-row: 5/7;
+        grid-column: 2/4;
+        
+        display: grid;
+        grid-template-rows: min-content 1fr;
+        
+        justify-items:center;
+        background-color: #93b6b7;
+        
+        background-size: contain;
+    }
     
+    &--twitter{
+        grid-row: 7/8;
+        grid-column: 1/2;
+        background-color: #38d5f4;
+    }
     
-    
-    
+    &--exp{
+        grid-row: 7/8;
+        grid-column: 2/3;
+        background-color: #f7f8f9;
+    }
+    &--tv{
+        grid-row: 7/8;
+        grid-column: 3/-1;
+        background-color: #2c2c2c;
+    }
     
     &__image-box{
         
@@ -85,7 +113,7 @@
         
         &--keyboard{
             grid-row: 1/2;
-            width: 24rem;
+            width: 30rem;
         }
         
         
@@ -114,6 +142,17 @@
         
         &--controller{
             width: 24.8rem;
+            grid-row: 1/2;
+           
+        }
+        
+        &--ipad{
+            
+            align-self: end;
+            width:60rem;
+            background-image: url('../img/UX.png');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
     &__image{
@@ -127,6 +166,11 @@
         &--icloud{
             width: 65%;
             
+        }
+        
+        &--ipad{
+            position: relative;
+            left:-10%;
         }
     }
 }

@@ -19,7 +19,11 @@
         
         &--icloud{
             z-index: 2;
+            margin-top: 3rem;
         
+        }
+        &--controller{
+            
         }
     }
     &__sub-heading{
@@ -45,12 +49,23 @@
         &--mac{
             grid-row: 2/3;
             width:60%;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
         
         &--icloud{
             z-index: 2;
+            margin-top: 3rem;
         
+        }
+        &--controller{
+            width:50%;
+            margin-top: 3rem;
+        }
+        &--ipad{
+            font-weight: bold;
+            text-transform: capitalize;
+            width: 50%;
+            margin-top: 6rem;
         }
     }
     &__details{
@@ -71,6 +86,7 @@
         &--icloud{
             width:70%;
             z-index: 2;
+            margin-top: 3rem;
         }
     }
     
@@ -104,8 +120,14 @@
             font-size: 1.2rem;
             letter-spacing: .24rem;
             background-color: #ffc80a;
-            padding: 1.4rem;
+            padding: 2rem;
             border-radius: 3rem;
+         
+            margin: 3rem 0;
+        }
+        
+        &--controller{
+            margin-top: 3rem;
         }
     }
 }
