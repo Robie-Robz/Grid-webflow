@@ -49,6 +49,10 @@ html {
     text-transform: capitalize;
     width: 50%;
     margin-top: 6rem; }
+  .item__sub-heading--twitter {
+    width: 50%;
+    margin-top: -12rem;
+    z-index: 2; }
 
 .item__details {
   font-size: 1.4rem;
@@ -194,6 +198,8 @@ html {
   grid-row: 7/8;
   grid-column: 1/2;
   background-color: #38d5f4;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
   justify-items: center; }
 
 .item--exp {
@@ -247,7 +253,12 @@ html {
 
 .item__image-box--twitter {
   width: 24rem;
-  background-color: #35cfed; }
+  height: 24rem;
+  border-radius: 50%;
+  background-color: #35cfed;
+  grid-row: 1/2;
+  position: relative;
+  z-index: 1; }
 
 .item__image-box--tv {
   width: 27.1rem; }
@@ -262,3 +273,9 @@ html {
   .item__image--ipad {
     position: relative;
     left: -10%; }
+  .item__image--twitter {
+    width: 4.3rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
