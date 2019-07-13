@@ -76,11 +76,14 @@
         }
         
         &--exp{
-            
+            width: 70%;
         }
         &--tv{
-        
-    
+            grid-row: 1/2;
+            grid-column: 2/3;
+            
+            width: 50%;
+            align-self: center;
         }
     }
     &__details{
