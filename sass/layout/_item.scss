@@ -78,7 +78,10 @@
         justify-items:center;
         background-color: #93b6b7;
         
+        background-image: url('../img/UX.png');
         background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     
     &--twitter{
@@ -121,7 +124,7 @@
         
         
         &--iphone{
-            width: 24.9rem;
+            width: 80%;
             grid-column: 2/3;
             grid-row: 1/-1;
 
@@ -129,16 +132,16 @@
         
         &--keyboard{
             grid-row: 1/2;
-            width: 30rem;
+            width: 75%;
         }
         
         
         &--mac{
             grid-row: 3/4;
-            width: 40rem;
+            width: 100%;
         
             position: relative;
-            left:-25rem;
+            left:-60%;
             align-self: end;
             
         }
@@ -153,11 +156,11 @@
             justify-items: center;
             align-items: center;
             transform: scale(1.7);
-            
+            margin-top: 10rem;
         }
         
         &--controller{
-            width: 24.8rem;
+            width: 75%;
             grid-row: 1/2;
            
         }
@@ -165,10 +168,8 @@
         &--ipad{
             
             align-self: end;
-            width:60rem;
-            background-image: url('../img/UX.png');
-            background-size: cover;
-            background-repeat: no-repeat;
+            width:80%;
+            
         }
         
         &--twitter{
@@ -187,7 +188,7 @@
         }
         
         &--tv{
-            width: 27.1rem;
+            width: 80%;
             
             grid-column: 1/2;
             

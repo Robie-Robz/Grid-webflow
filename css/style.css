@@ -190,7 +190,10 @@ html {
   grid-template-rows: min-content 1fr;
   justify-items: center;
   background-color: #93b6b7;
-  background-size: contain; }
+  background-image: url("../img/UX.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .item--twitter {
   grid-row: 7/8;
@@ -218,19 +221,19 @@ html {
   grid-template-rows: 1fr; }
 
 .item__image-box--iphone {
-  width: 24.9rem;
+  width: 80%;
   grid-column: 2/3;
   grid-row: 1/-1; }
 
 .item__image-box--keyboard {
   grid-row: 1/2;
-  width: 30rem; }
+  width: 75%; }
 
 .item__image-box--mac {
   grid-row: 3/4;
-  width: 40rem;
+  width: 100%;
   position: relative;
-  left: -25rem;
+  left: -60%;
   align-self: end; }
 
 .item__image-box--icloud {
@@ -242,18 +245,16 @@ html {
   display: grid;
   justify-items: center;
   align-items: center;
-  transform: scale(1.7); }
+  transform: scale(1.7);
+  margin-top: 10rem; }
 
 .item__image-box--controller {
-  width: 24.8rem;
+  width: 75%;
   grid-row: 1/2; }
 
 .item__image-box--ipad {
   align-self: end;
-  width: 60rem;
-  background-image: url("../img/UX.png");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  width: 80%; }
 
 .item__image-box--twitter {
   width: 24rem;
@@ -265,7 +266,7 @@ html {
   z-index: 1; }
 
 .item__image-box--tv {
-  width: 27.1rem;
+  width: 80%;
   grid-column: 1/2; }
 
 .item__image {
