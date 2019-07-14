@@ -5,6 +5,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 64em) {
+    html {
+      font-size: 50%; } }
 
 .item__name {
   font-family: 'Montserrat', sans-serif;
@@ -192,7 +195,7 @@ html {
   background-color: #93b6b7;
   background-image: url("../img/UX.png");
   background-size: contain;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat; }
 
 .item--twitter {

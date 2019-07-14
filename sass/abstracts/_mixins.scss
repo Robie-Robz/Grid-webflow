@@ -1,0 +1,10 @@
+$bp-sm-desktop:64em; //1000px
+$bp-tablet:50em; //800px
+
+@mixin small-desktop{
+   @media (max-width: $bp-sm-desktop){@content};
+}
+
+@mixin tablet{
+    @media (max-width:$bp-tablet){@content};
+}

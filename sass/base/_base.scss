@@ -5,4 +5,9 @@
 }
 html{
     font-size: 62.5%;
+    
+    
+    @include small-desktop{
+        font-size: 50%;
+    }
 }
