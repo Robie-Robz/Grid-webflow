@@ -27,7 +27,7 @@
         
         &--icloud{
             z-index: 2;
-           
+            margin-top: 2rem;
         
         }
         &--controller{
@@ -52,18 +52,18 @@
             font-weight: 700;
             text-transform: capitalize;
             width: 70%;
-
+            margin-top: 2rem;
         }
         
         &--mac{
             grid-row: 2/3;
             width:60%;
-           
+           margin-top: 2rem;
         }
         
         &--icloud{
             z-index: 2;
-        
+            margin-top: 2rem;
         
         }
         &--controller{
@@ -74,7 +74,7 @@
             font-weight: bold;
             text-transform: capitalize;
             width: 50%;
-           
+            margin-top: 2rem;
         }
         
         
@@ -137,11 +137,11 @@
         }
         
         &--keyboard{
-           
+           margin-top: 2rem;
         }
         
         &--mac{
-         
+            margin-top: 2rem;
         }
         
         &--icloud{
@@ -155,7 +155,7 @@
         }
         
         &--controller{
-            
+            margin-top: 2rem;
         }
     }
 }

@@ -1,5 +1,5 @@
-$bp-sm-desktop:64em; //1000px
-$bp-tablet:50em; //800px
+$bp-sm-desktop:75em; //1200px
+$bp-tablet:60.625em; //970px
 
 @mixin small-desktop{
    @media (max-width: $bp-sm-desktop){@content};
