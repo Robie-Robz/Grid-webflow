@@ -1,5 +1,8 @@
+$bp-lg-desktop:100em; //1600px
 $bp-sm-desktop:75em; //1200px
 $bp-tablet:60.625em; //970px
+$bp-mobile:28.125em; //450px
+$bp-mobile-small:23.4375em;//375px
 
 @mixin small-desktop{
    @media (max-width: $bp-sm-desktop){@content};
@@ -7,4 +10,16 @@ $bp-tablet:60.625em; //970px
 
 @mixin tablet{
     @media (max-width:$bp-tablet){@content};
+}
+
+@mixin mobile-regular{
+    @media (max-width:$bp-mobile){@content};
+}
+
+@mixin mobile-small{
+    @media (max-width:$bp-mobile-small){@content};
+}
+
+@mixin large-desktop{
+   @media (min-width: $bp-lg-desktop){@content};
 }

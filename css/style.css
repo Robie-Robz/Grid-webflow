@@ -8,6 +8,15 @@ html {
   @media (max-width: 75em) {
     html {
       font-size: 57.5%; } }
+  @media (max-width: 28.125em) {
+    html {
+      font-size: 48%; } }
+  @media (max-width: 23.4375em) {
+    html {
+      font-size: 38%; } }
+  @media (min-width: 100em) {
+    html {
+      font-size: 90%; } }
 
 .item__name {
   font-family: 'Montserrat', sans-serif;
@@ -16,8 +25,7 @@ html {
   text-transform: uppercase;
   letter-spacing: .2rem; }
   .item__name--iphone {
-    align-self: end;
-    justify-self: center; }
+    align-self: end; }
   .item__name--evaporator {
     align-self: end; }
   .item__name--mac {
@@ -33,8 +41,7 @@ html {
   font-weight: 400; }
   .item__sub-heading--iphone {
     width: 70%;
-    line-height: 1.5;
-    justify-self: center; }
+    line-height: 1.5; }
   .item__sub-heading--evaporator {
     width: 70%; }
   .item__sub-heading--keyboard {
@@ -74,8 +81,7 @@ html {
   line-height: 2.6rem; }
   .item__details--iphone {
     width: 70%;
-    align-self: start;
-    justify-self: center; }
+    align-self: start; }
   .item__details--mac {
     grid-row: 1/3;
     grid-column: 2/3;
@@ -156,7 +162,9 @@ html {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, min-content); }
+  grid-template-rows: repeat(3, min-content);
+  padding-left: 4rem;
+  padding-top: 4rem; }
   @media (max-width: 60.625em) {
     .item--iphone {
       grid-row: 3/5;
@@ -172,7 +180,8 @@ html {
   @media (max-width: 60.625em) {
     .item--evaporator {
       grid-row: 1/3;
-      grid-column: 1/-1; } }
+      grid-column: 1/-1;
+      padding: 5rem 0; } }
 
 .item--keyboard {
   grid-row: 3/5;
@@ -181,6 +190,7 @@ html {
   display: grid;
   grid-template-rows: repeat(3, min-content);
   justify-items: center;
+  align-content: center;
   background-color: #f05638; }
   @media (max-width: 60.625em) {
     .item--keyboard {
@@ -222,7 +232,8 @@ html {
   @media (max-width: 60.625em) {
     .item--controller {
       grid-row: 5/7;
-      grid-column: 3/-1; } }
+      grid-column: 3/-1;
+      padding: 5rem 0; } }
 
 .item--ipad {
   grid-row: 5/7;
@@ -246,7 +257,8 @@ html {
   background-color: #38d5f4;
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  justify-items: center; }
+  justify-items: center;
+  align-content: center; }
   @media (max-width: 60.625em) {
     .item--twitter {
       grid-row: 9/11;
@@ -263,7 +275,8 @@ html {
   @media (max-width: 60.625em) {
     .item--exp {
       grid-row: 13/14;
-      grid-column: 1/-1; } }
+      grid-column: 1/-1;
+      padding: 5rem 0; } }
 
 .item--tv {
   grid-row: 7/8;
@@ -291,7 +304,8 @@ html {
   width: 100%;
   position: relative;
   left: -60%;
-  align-self: end; }
+  align-self: end;
+  margin-top: 2rem; }
 
 .item__image-box--icloud {
   grid-row: 1/2;

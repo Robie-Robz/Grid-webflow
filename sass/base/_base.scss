@@ -10,4 +10,16 @@ html{
     @include small-desktop{
         font-size: 57.5%;
     }
+    
+    @include mobile-regular{
+        font-size: 48%;
+    }
+    
+    @include mobile-small{
+        font-size: 38%;
+    }
+    
+    @include large-desktop{
+        font-size: 90%;
+    }
 }
