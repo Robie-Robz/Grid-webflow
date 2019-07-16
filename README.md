@@ -7,7 +7,7 @@ HTML, CSS, SASS(SCSS), BEM, Responsive web-design, Grid.
 
 Objective
 ---------
-The aim of this project was to practice CSS grid.
+The aim of this project was to make web page completely using CSS grid.
 
 Additional info
 ---------------
